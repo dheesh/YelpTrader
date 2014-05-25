@@ -2,9 +2,9 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.8/angular.min.js"></script>
+    <script src="js/angular.min.js"></script>
     <script src="js/searchBusiness.js"></script>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Stores Near me</title>
 
 </head>
@@ -13,10 +13,10 @@
         <div ng-controller="Pagecontroller">
             <div ng-repeat = "item in items">
                 <div class="media">
-                    <img class="media-object pull-left img-rounded" src="{{item.image_url}}"/>
+                    <img class="media-object pull-left img-rounded" ng-src="{{item.image_url}}"/>
                     <div class="media-body">
                         <h4 class="media-heading">{{item.name}}</h4>
-                        <div class="media-text">{{item.distance * 0.000621371192}} miles away</div>
+                        <div class="media-text">{{item.distance | toMiles }}</div>
                     </div>
                 </div>
             </div>
