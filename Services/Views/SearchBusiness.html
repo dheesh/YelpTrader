@@ -2,11 +2,11 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <script src="js/angular.min.js"></script>
+    <script src="../../bower_components/angular/angular.min.js"></script>
+    <script src="../../bower_components/angular-loading-bar/src/loading-bar.js"></script>
     <script src="js/searchBusiness.js"></script>
-    <script src="../../node_modules/angular-loading-bar/src/loading-bar.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../node_modules/angular-loading-bar/src/loading-bar.css">
+    <link rel="stylesheet" href="../../bower_components/angular-loading-bar/src/loading-bar.css">
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
     <title>Stores Near me</title>
 
 </head>
@@ -18,7 +18,7 @@
                 <div class="media panel">
                     <img class="media-object pull-left img-rounded" ng-src="{{item.image_url}}"/>
                     <div class="media-body">
-                       <a href="{{item.url}}" <h4 class="media-heading">{{item.name}}</h4></a>
+                       <a href="{{item.url}}"> <h4 class="media-heading">{{item.name}}</h4></a>
                         <div class="media-text text-muted">{{item.distance | toMiles }}</div>
                     </div>
                 </div>

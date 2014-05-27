@@ -1,0 +1,9 @@
+{
+    "name":"YelpTraders",
+    "version":"0.0.1",
+    "dependencies": {
+        "bootstrap":"*",
+        "angular-loading-bar":"*",
+        "angular":"*"
+    }
+}

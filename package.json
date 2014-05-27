@@ -4,8 +4,7 @@
     "dependencies":{
         "express" : "3.x",
         "yelp" : "0.1.x",
-        "twitter-bootstrap":"*",
-        "angular-loading-bar":"*"
+        "bower":"*"
     },
     "devDependencies":{
         "mocha":"1.19.0",
